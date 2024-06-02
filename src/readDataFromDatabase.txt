@@ -1,0 +1,52 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class OracleDataReader {
+    public static void main(String[] args) {
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            // Load the Oracle JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            // Connect to the database
+            String url = "jdbc:oracle:thin:@localhost:1521:ORCL"; // Replace with your Oracle database URL
+            String username = "your_username";
+            String password = "your_password";
+            connection = DriverManager.getConnection(url, username, password);
+
+            // Create a statement
+            statement = connection.createStatement();
+
+            // Execute a query
+            String sql = "SELECT * FROM your_table"; // Replace "your_table" with the name of your table
+            resultSet = statement.executeQuery(sql);
+
+            // Process the result set
+            while (resultSet.next()) {
+                // Retrieve by column name
+                int id = resultSet.getInt("id"); // Replace "id" with the actual column name
+                String name = resultSet.getString("name"); // Replace "name" with the actual column name
+
+                // Display values
+                System.out.println("ID: " + id + ", Name: " + name);
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Close the resultSet, statement, and connection
+            try {
+                if (resultSet != null) resultSet.close();
+                if (statement != null) statement.close();
+                if (connection != null) connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}

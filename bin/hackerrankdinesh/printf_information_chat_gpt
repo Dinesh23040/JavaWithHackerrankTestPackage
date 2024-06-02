@@ -1,0 +1,48 @@
+`printf` is a method in Java that allows you to format and print text in a specific way. It stands for "print formatted", and it's part of the `PrintStream` class, typically used with `System.out` to print output to the console.
+
+Here's a breakdown of how to use `printf`:
+
+1. **Format String**: The first argument of `printf` is a format string. This string specifies how the output should be formatted. It contains plain text along with format specifiers, which start with `%`. Each specifier is replaced by the value of an argument.
+
+2. **Format Specifiers**: Format specifiers indicate where and how to insert the values of additional arguments. Common format specifiers include:
+   - `%s`: Insert a string.
+   - `%d`: Insert a decimal integer.
+   - `%f`: Insert a floating-point number.
+   - `%c`: Insert a character.
+   - `%b`: Insert a boolean value.
+   - `%n`: Insert a newline character.
+
+3. **Width and Precision**: You can specify the width and precision of the output. For example, `%5s` specifies a field of width 5 characters for a string. `%10.2f` specifies a floating-point number with a total width of 10 characters, including 2 digits after the decimal point.
+
+4. **Flags**: Flags modify the behavior of the format specifiers. For example:
+   - `-`: Left-justify the output.
+   - `+`: Always include a sign (+ or -) for numeric values.
+   - `0`: Pad numeric values with leading zeros.
+   - `,`: Use locale-specific grouping separators for numeric values.
+
+5. **Additional Arguments**: After the format string, you provide additional arguments corresponding to the format specifiers. These arguments are inserted into the format string in the order they appear.
+
+Here's an example demonstrating the usage of `printf`:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String name = "John";
+        int age = 30;
+        double height = 5.8;
+
+        System.out.printf("Name: %s, Age: %d, Height: %.1f feet%n", name, age, height);
+    }
+}
+```
+
+In this example:
+- `%s` is replaced by the string variable `name`.
+- `%d` is replaced by the integer variable `age`.
+- `%.1f` specifies a floating-point number (`height`) with one digit after the decimal point.
+- `%n` inserts a newline character.
+
+When you run this program, it will print:
+```
+Name: John, Age: 30, Height: 5.8 feet
+```
