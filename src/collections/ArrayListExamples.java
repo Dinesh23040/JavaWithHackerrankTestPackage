@@ -231,6 +231,12 @@ class Constructor1
 			count++;
 		}
 		
+		//======= or other eay=========
+		//int index = al.indexOf("DINESH");
+		//	    if (index != -1) {
+		//	        al.set(index, "Dinesh_Updated");
+		//	    }
+		
 		al.forEach(x->System.out.println("Array List Elements "+x));		
 		System.out.println("Index value of Dinesh_Updated : "+al.indexOf("Dinesh_Updated"));
 		

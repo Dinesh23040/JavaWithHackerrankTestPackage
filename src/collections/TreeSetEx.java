@@ -44,13 +44,13 @@ public class TreeSetEx {
 		list.add(4);
 		list.add(5);
 		list.add(3);
-		//list.add(null);
+		list.add(null);
 		
 				
 		tsp.display(list);
 		
 		TreeSet ts2=tsp.getSort(list);			
 		
-		tsp.display(ts2);
+		//tsp.display(ts2);
 	}
 }

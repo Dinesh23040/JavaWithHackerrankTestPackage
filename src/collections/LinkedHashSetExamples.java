@@ -1,7 +1,5 @@
 package collections;
 
-
-
 import java.util.*;
 
 class LHSPractice

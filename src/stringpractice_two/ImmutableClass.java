@@ -4,7 +4,7 @@ final class Employee{
 	
 	final String pancardNumber;
 	
-	public Employee(String pancardNumber) {
+	Employee(String pancardNumber) {
 		this.pancardNumber=pancardNumber;
 	}
 	

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 /*
- * Linked HashMap maintains the insetion order of the keys
+ * Linked HashMap maintains the insertion order of the keys
  */
 
 class LinkedHashMapPractice{

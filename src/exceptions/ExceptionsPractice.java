@@ -73,7 +73,7 @@ class ExceptionExample {
 
 		catch (ArithmeticException ae) {
 
-			// int b=1/0;
+			int b=1/0;
 			ae.printStackTrace();
 		}
 
@@ -90,11 +90,11 @@ public class ExceptionsPractice {
 		// TODO Auto-generated method stub
 
 		ExceptionExample ee = new ExceptionExample();
-		ee.internalTryCatch();
+		//ee.internalTryCatch();
 
 		// System.out.println("Execution in main method");
 		//ee.throwExample(15);
 
-		//ee.try_NoCatchBlock();
+		ee.try_NoCatchBlock();
 	}
 }

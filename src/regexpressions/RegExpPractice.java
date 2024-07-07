@@ -24,7 +24,7 @@ class RegExamples{
 	
 	void findEx() {
 		
-		Pattern p = Pattern.compile("ab");
+		Pattern p = Pattern.compile("(ab)+");
 		Matcher m = p.matcher("abaaaba");
 		System.out.println("Group Count : "+ m.groupCount());
 		
@@ -32,7 +32,7 @@ class RegExamples{
 			
 			System.out.print("Start Position : "+m.start() + "  \n");
 			System.out.println("End Position : "+m.end());
-			System.out.println("Group :"+m.group(0));		
+			System.out.println("Group :"+m.group());		
 			}
 		
 		}
@@ -121,7 +121,8 @@ public class RegExpPractice {
 		RegExamples re=new RegExamples();
 		//re.match();
 		//re.findEx();
-		re.reg_from_python();
+		re.reg_from_python();	
+		
 	}
 
 }

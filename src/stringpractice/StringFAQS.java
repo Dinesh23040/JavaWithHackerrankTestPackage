@@ -250,13 +250,9 @@ public class StringFAQS {
 	void countChar() {
 
 		String s = "dinesh:dinesh:dineshidi";
-
 		String[] sarray = s.split("i", 0);
-
 		int length = sarray.length-1;
-
 		System.out.println("repeated for : " + length);
-
 		// System.out.println("String length :"+ "D inesh".length());
 	}
 

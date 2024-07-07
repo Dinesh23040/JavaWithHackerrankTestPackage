@@ -127,12 +127,13 @@ public class HashMapExamples
 		hm.put(5, null);
 		hm.put(null, null);
 		hm.put(null, null);
+		hm.put(null, null);
 		
 		HashMapPractice hmpO=new HashMapPractice();
 		//hmpO.hashMapBasicMethods(hm);
 		//hmpO.printNonGenericHashMap();
 		//hmpO.printHashMapusingLambda();
-		hmpO.printGenericHashMap();
+		//hmpO.printGenericHashMap();
 		
 		/*
 		 * Book b1=new Book(101,"Let us C","Yashwant Kanetkar","BPB",8); Book b2=new
@@ -147,7 +148,7 @@ public class HashMapExamples
 		
 		for(Map.Entry<Integer, String> h:hm.entrySet())
 		{
-			//System.out.println("Key :"+h.getKey()+" Value :"+h.getValue());
+			System.out.println("Key :"+h.getKey()+" Value :"+h.getValue());
 			
 		}
 		//hmpO.printHashMapUsingIteratorInterface(hm);

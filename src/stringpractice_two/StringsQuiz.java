@@ -6,10 +6,10 @@ public class StringsQuiz {
 		
 		//Question - 1 :
 		//---------------
-//		String[] arr= {"meow","bray"};
-//		String a1="meow";
-//		String a2=new String("meow");
-//		System.out.println(arr[0]==a2);
+		String[] arr= {"meow","bray"};
+		String a1="meow";
+		String a2=new String("meow");
+		System.out.println(arr[0]==a2);
 		
 //		String s=""; // holds an empty reference
 //		System.out.println(s);

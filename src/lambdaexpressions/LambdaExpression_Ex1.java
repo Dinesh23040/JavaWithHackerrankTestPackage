@@ -4,8 +4,7 @@ import java.util.*;
 
 
 interface AddAnother {
-	int mysteryMethod(int x);
-	
+	int mysteryMethod(int x);	
 }
 
 public class LambdaExpression_Ex1 {

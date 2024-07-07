@@ -13,7 +13,7 @@ public class Try_With_Resource {
 	
 	public static void main(String[] args) {
 		
-    try(FileReader fr=new FileReader("C:\\Users\\dg185171\\Desktop\\ColdStart.txt")) {			 
+    try(FileReader fr=new FileReader("C:\\Users\\gurramku\\Desktop\\Dinesh_API.txt")) {			 
 			
 			while((i=fr.read())!=-1) {				
 				System.out.print((char)i);

@@ -40,6 +40,7 @@ public class DuplicateWords_1 {
     public static void main(String[] args) {
 
         String regex = "\\b(\\w+)(\\s+\\1\\b)+";
+        //String regex = "\\b(\\w+\\s)(\\1)*\\b"; // this is just to try something new
         Pattern p = Pattern.compile(regex,  2);
 
         Scanner in = new Scanner(System.in);
@@ -58,7 +59,7 @@ public class DuplicateWords_1 {
             }
             
             // Prints the modified sentence.
-            System.out.println(input);
+            System.out.println("input : "+input);
         }
         
         in.close();

@@ -13,6 +13,8 @@ public class LocalTimeEx {
 	    System.out.println(s);
 	    System.out.println(s.substring(4));
 	    
+//	    System.out.println(System.getProperty("user.dir"));
+	    
 	}
 
 }

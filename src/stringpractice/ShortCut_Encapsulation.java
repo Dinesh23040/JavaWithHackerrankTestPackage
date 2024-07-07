@@ -6,7 +6,6 @@ public class ShortCut_Encapsulation {
 
 	private int a;
 	private String name;
-	
 	public int getA() {
 		return a;
 	}
@@ -19,5 +18,7 @@ public class ShortCut_Encapsulation {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 	
 }

@@ -5,8 +5,7 @@ import exceptions.customexception.*;
 public class CustomException2 {
 	
 	void salary(String sal) throws NSalException
-	{
-		
+	{		
 		int s=Integer.parseInt(sal);
 		if(s<0) {
 			throw new NSalException("Negative Salary is not allowed");
@@ -19,5 +18,4 @@ public class CustomException2 {
 		CustomException2 cst=new CustomException2();		
 		cst.salary("-1");
 	}
-
 }

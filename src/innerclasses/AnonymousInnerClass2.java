@@ -13,12 +13,12 @@ interface organisation{
 
 public class AnonymousInnerClass2 implements Employee,organisation {
 	
-	@Override
+	//@Override
 	public void salary() {
 		System.out.println("salary : "+x);
 	}
 	
-	@Override
+	//@Override
 	public void revenue() {
 		System.out.println("revenue");
 	}

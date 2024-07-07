@@ -10,9 +10,7 @@ final class Employee {
 	
 	public String getEmployeeName() {
 		return employee_name;
-	}
-	
-	
+	}	
 	
 }
 

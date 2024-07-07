@@ -2,7 +2,6 @@ package printingpatterns;
 
 public class Patterns {
 	
-	
 	public void pattern1() {
 		
 		for(int i=1;i<=4;i++) {

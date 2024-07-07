@@ -28,7 +28,6 @@ class Student implements  Comparable<Student> {
 		else
 			return -1;
 	}
-
 }
 
 public class TestSort3 {

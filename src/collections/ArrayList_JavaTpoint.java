@@ -3,6 +3,8 @@ package collections;
 import java.util.*;
 import java.util.stream.Collectors;
 
+//ArrayList allows null values
+
 //programs to compare two arraylist : https://www.javatpoint.com/how-to-compare-two-arraylist-in-java
 
 //compare two arraylist (contentEquals) : https://www.javatpoint.com/how-to-compare-two-arraylist-in-java
@@ -29,8 +31,8 @@ public class ArrayList_JavaTpoint {
 
 		ArrayList_JavaTpoint al = new ArrayList_JavaTpoint();
 		
-		//al.arrayListEx1();
-		al.sort_ArrayList();
+		al.arrayListEx1();
+		//al.sort_ArrayList();
 		//al.addElements_DiffWays();
 		
 		//al.arrayList_RemoveElements();
@@ -61,9 +63,7 @@ public class ArrayList_JavaTpoint {
 
 		//al.arrayList_RemoveElements();
 
-		//al.stream_Interface();
-	
-		
+		al.stream_Interface();
 	}
 
 	void arrayListEx1() {
@@ -72,6 +72,8 @@ public class ArrayList_JavaTpoint {
 		al.add("Dinesh");
 		al.add("Kumar");
 		al.add("Gurram");
+		//al.add(null);
+		//al.add(null);
 		//al.add("");
 		//al.add("");
 		
@@ -254,7 +256,7 @@ public class ArrayList_JavaTpoint {
 		
 		//Link : https://www.javatpoint.com/how-to-compare-two-arraylist-in-java
 		
-		ArrayList<String> firstList  = new ArrayList<String>(Arrays.asList("Java", "Python", "Ruby", "Go"));  
+		ArrayList<String> firstList  = new ArrayList<String>(Arrays.asList("Java", "Python", "Ruby"));  
 		System.out.println("First List: "+firstList);  
 		
 		ArrayList<String> secondList = new ArrayList<String>(Arrays.asList("Java", "Python", "Ruby", "Go", "Perl"));  

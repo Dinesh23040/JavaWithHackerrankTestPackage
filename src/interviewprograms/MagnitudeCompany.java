@@ -35,15 +35,10 @@ public class MagnitudeCompany {
 
 	}
 
-	public static void printReverseWords() {
-
-		
-		  String s="My       name     is  Dinesh";
-		  
-		  String[] sa=s.split(" ");
-		  
-		  for(int i=sa.length-1;i>=0;i--){
-		  
+	public static void printReverseWords() {		
+		  String s="My       name     is  Dinesh";		  
+		  String[] sa=s.split(" ");		  
+		  for(int i=sa.length-1;i>=0;i--){		  
 		  System.out.print(sa[i]+" ");
 		  }
 
@@ -86,8 +81,8 @@ public class MagnitudeCompany {
 
 	public static void main(String[] args) {
 
-		// separAlpahNumeric("abc641def82ghi1");
-		printReverseWords();
+		separAlpahNumeric("abc641def82ghi1");
+		//printReverseWords();
 
 	}
 }

@@ -44,13 +44,13 @@ public class AllBasicEx {
 	
 	public static void main(String[] args) {
 		
-		List<Product> productlist=new ArrayList<Product>();
+		List<Product3> productlist=new ArrayList<Product3>();
 		
-		productlist.add(new Product(1,"HP Laptop",25000f));
-		productlist.add(new Product(2,"Dell Laptop",30000f));  
-		productlist.add(new Product(3,"Lenevo Laptop",28000f));  
-		productlist.add(new Product(4,"Sony Laptop",28000f));  
-		productlist.add(new Product(5,"Apple Laptop",90000f));
+		productlist.add(new Product3(1,"HP Laptop",25000f));
+		productlist.add(new Product3(2,"Dell Laptop",30000f));  
+		productlist.add(new Product3(3,"Lenevo Laptop",28000f));  
+		productlist.add(new Product3(4,"Sony Laptop",28000f));  
+		productlist.add(new Product3(5,"Apple Laptop",90000f));
 		
 		//Using reduce
 		
@@ -72,12 +72,12 @@ public class AllBasicEx {
 		System.out.println("Collectors :" + totaldouble);
 		
 		//max price
-		Product maxprice=productlist.stream()
+		Product3 maxprice=productlist.stream()
 					.max((product1,product2) -> product1.price>product2.price?1:-1).get();		
 		System.out.println("maxprice :" +maxprice.price);
 					
 		//min price
-		Product minprice=productlist.stream().min((product1,product2)->product1.price<product1.price?1:-1).get();
+		Product3 minprice=productlist.stream().min((product1,product2)->product1.price<product1.price?1:-1).get();
 		System.out.println("min price :"+minprice.price);
 		
 		//count

@@ -12,6 +12,5 @@ public class StreamIterating {
 		.collect(Collectors.toList());
 		
 		System.out.println("Integers in the list :"+ list);
-	}
-	
+	}	
 }
